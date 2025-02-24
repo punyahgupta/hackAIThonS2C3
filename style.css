@@ -1,0 +1,179 @@
+/* General Styles */
+body {
+    font-family: 'Verdana', sans-serif;
+    background-color: #E6F8B2;
+    color: #704E2E;
+    margin: 0;
+    padding: 0;
+    text-align: center;
+    width: 100%;
+}
+
+/* Stylish Headings */
+h1, h2, h3 {
+    font-family: "Playfair", serif;
+    font-weight: 700;
+}
+
+h1 {
+    font-family: "Bradley Hand", cursive;
+    font-size: 5em;
+    animation: fadeIn 1s ease-in-out;
+}
+
+h2 {
+    font-family: "Bradley Hand", cursive;
+    font-size: 2.5em;
+    margin-bottom: 15px;
+}
+
+h3 {
+    font-size: 1.8em;
+    margin-top: 20px;
+}
+
+/* Header */
+header {
+    background-color: #79745C;
+    padding: 15px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    position: sticky;
+    top: 0;
+    width: 100%;
+    z-index: 100;
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+.logo {
+    width: 100px;
+}
+
+nav ul {
+    list-style: none;
+    padding: 0;
+}
+
+
+nav ul li {
+    display: inline;
+    margin: 0 15px;
+}
+
+nav ul li a {
+    color: white;
+    text-decoration: none;
+    font-weight: 600;
+}
+
+
+/* Hero Section */
+.hero {
+    background: linear-gradient(135deg, #CDE77F, #709176);
+    padding: 50px 20px;
+    color: white;
+    border-radius: 0 0 50% 50%;
+}
+
+.hero .highlight {
+    font-style: italic;
+}
+
+/* Buttons */
+.cta {
+    background-color: #709176;
+    color: white;
+    border: none;
+    padding: 12px 25px;
+    margin: 10px;
+    font-size: 1.2em;
+    cursor: pointer;
+    border-radius: 5px;
+    font-weight: 600;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+.mission{
+    background-color: #704E2E;
+}
+
+.cta:hover {
+    transform: scale(1.05);
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.2);
+}
+
+/* Animations */
+@keyframes fadeIn {
+    from { opacity: 0; transform: translateY(-20px); }
+    to { opacity: 1; transform: translateY(0); }
+}
+
+@keyframes slideIn {
+    from { opacity: 0; transform: translateX(-50px); }
+    to { opacity: 1; transform: translateX(0); }
+}
+
+.fade-in {
+    animation: fadeIn 1s ease-in-out;
+}
+
+.slide-in {
+    animation: slideIn 1s ease-in-out;
+}
+
+/* Product Gallery */
+.product-gallery img {
+    width: 300px;
+    margin: 10px;
+    border-radius: 10px;
+    transition: transform 0.4s ease;
+}
+
+.product-gallery img:hover {
+    transform: scale(1.1);
+}
+
+#mission{
+    background-color: #709176;
+    color: #E6F8B2;
+    margin: 10px;
+    padding: 20px;
+}
+
+feedback-section {
+    padding: 40px 20px;
+    background-color: #CDE77F;
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+form input, form textarea {
+    width: 80%;
+    padding: 10px;
+    margin: 10px 0;
+}
+.cores{
+    font-family:Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+}
+
+form button {
+    width: 50%;
+}
+
+
+/* Footer */
+footer {
+    background-color: #79745C;
+    color: white;
+    padding: 20px;
+}
+
+.social-links a {
+    color: white;
+    margin: 0 15px;
+    text-decoration: none;
+}
